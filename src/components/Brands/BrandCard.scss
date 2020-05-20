@@ -1,0 +1,191 @@
+.cards__container {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    height: 36rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    @media(max-width:600px) {
+        width: 100%;
+    }
+
+    &__model {
+        width:50%;
+        overflow: hidden;
+        order: 1;
+        height: 100%;
+
+
+        img {
+            transform: scale(0.9) translate(-15%, -10%);
+            
+        }
+    }
+
+    &__logo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #c21e2e;
+        order: 2;
+        height: 100%;
+        flex-shrink: 1;
+        
+
+        img {
+            height: 6.5rem;
+            margin-bottom: 6rem;
+            margin-left: 3rem;
+            margin-top: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 4rem;
+            width: 80%;
+            color: white;
+            margin-left: 3rem;
+        }
+
+        &--links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 3rem;
+
+            button {
+                padding: 1rem 2.5rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color:black;
+                border: none;
+                background-color: white;
+                border-radius: 3px;
+                margin-right: 5rem;
+                cursor: pointer;
+                @media (max-width:600px) {
+                    padding: 0.5rem 1.5rem;
+                    font-size: 1rem;
+                    margin-right: 2rem;
+                }
+
+                &:hover {
+                    background-color: black;
+                    color:white;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 500;   
+                cursor: pointer;
+                color: white;
+                
+
+            }
+        }
+    }
+}
+
+.cards__inverse {
+    height: 36rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    @media(max-width:600px) {
+        width: 100%;
+    }
+
+    &__model {
+        width:50%;
+        overflow: hidden;
+        order: 2;
+        height: 100%;
+
+
+        img {
+            transform: scale(0.9) translate(-15%, -10%);
+            
+        }
+    }
+
+    &__logo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: black;
+        order: 1;
+        height: 100%;
+        flex-shrink: 1;
+        
+
+        img {
+            height: 6.5rem;
+            margin-bottom: 6rem;
+            margin-left: 3rem;
+            margin-top: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 4rem;
+            width: 80%;
+            color: white;
+            margin-left: 3rem;
+        }
+
+        &--links {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 3rem;
+
+            button {
+                padding: 1rem 2.5rem;
+                font-size: 1.5rem;
+                font-weight: 700;
+                color:black;
+                border: none;
+                background-color: white;
+                border-radius: 3px;
+                margin-right: 5rem;
+                cursor: pointer;
+                @media (max-width:600px) {
+                    padding: 0.5rem 1.5rem;
+                    font-size: 1rem;
+                    margin-right: 2rem;
+                }
+
+                &:hover {
+                    background-color: #c21e2e;
+                    color:white;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 500;   
+                cursor: pointer;
+                color: white;
+                
+
+            }
+        }
+    }
+}
+

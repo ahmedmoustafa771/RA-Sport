@@ -1,0 +1,25 @@
+.cart {
+    position: relative;
+
+    &__icon {
+        font-size: 4.5rem;
+        color: #22aea5;
+        padding: 0 1rem;
+        
+    }
+
+    &__circle {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 10%;
+        left: 60%;
+        background-color:#22aea5;
+        color: white;
+        text-align: center;
+        margin:auto;
+        font-size: 1rem;
+        
+    }
+}

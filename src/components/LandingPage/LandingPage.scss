@@ -1,0 +1,96 @@
+.LP {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 4rem;
+  @media(max-width:900px) {
+    margin-bottom: 10rem;
+  }
+
+  &__body {
+    margin: 0 5%;
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-top: 3rem;
+    h1 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 5.1rem;
+      letter-spacing: 0.2rem;
+      color: #22aea5;
+      width: 70%;
+      margin-bottom: 2rem;
+      @media(max-width:900px) {
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2.4rem;
+      letter-spacing: 0.4rem;
+      color: black;
+      width: 50%;
+      margin-top: 4rem;
+      @media(max-width:900px) {
+        width: 100%;
+        margin-top: 6rem;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 2rem;
+      color: white;
+      margin-top: 2.5rem;
+      width: 60%;
+      text-align: justify;
+      letter-spacing: 0.2rem;
+      margin-bottom: 2rem;
+
+      &:last-child {
+        color: black;
+        margin-top: 0.4rem;
+        width: 70%;
+        
+        @media(max-width:900px) {
+          width: 90%;
+          margin-bottom: 0;
+        }
+      }
+      
+      @media(max-width:900px) {
+        width: 90%;
+      }
+    }
+  }
+}
+
+.img__container {
+  height: 75vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+  
+}
+
+.img__back {
+background-size: cover;
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%, -40%) scale(0.85);
+  @media(max-width:900px) {
+    transform: translate(-50%, -40%) scale(0.55);
+  }
+}
+
