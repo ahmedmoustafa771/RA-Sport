@@ -1,0 +1,16 @@
+.sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    height:12rem;
+    @media (max-width: 900px) {
+        flex-wrap: wrap;
+        height:100%;
+    }
+
+    &__img {
+        height: 100%;
+        padding: 0 1rem;
+    }
+}

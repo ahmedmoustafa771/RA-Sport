@@ -1,0 +1,91 @@
+.products {
+    width:100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    &__header {
+        width:80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 4rem;
+        @media (max-width: 900px) {
+            width: 90%;
+        }
+
+        &--text {
+            align-self: flex-end;
+            h2 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 2.4rem;
+                letter-spacing: 0.4rem;
+                color: black;
+                padding: 0.5rem 0;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 2rem;
+                color: black;
+                letter-spacing: 0.2rem;
+            }
+        }
+    }
+
+    &__slide {
+        padding: 1rem 0;
+        height: 45rem;
+        width:100%;
+        @media (max-width: 900px) {
+            height: 60rem;
+        }
+
+        &--div {
+            height:100%;
+            width:25%;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: flex-start;
+            margin: 0 2rem;
+        }
+
+        &--img {
+            width:100%;
+            height:80%;
+            position: relative;
+        }
+        &--logo {
+            position: absolute;
+            top:0;
+            left:0;
+            height:5rem;
+            padding: 1rem;
+            background-color: white;
+        }
+        &--foot {
+            width: 100%;
+            height: 20%;
+            padding: 1rem 0;
+
+            h3 {
+                font-weight: 500;
+            }
+
+            h4 {
+                font-size: 1.5rem;
+                color: #727b82;
+            }
+            h5 {
+                font-size: 1.7rem;
+                color:#22aea5;
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -1,0 +1,94 @@
+.footer {
+    padding: 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2.4rem;
+        letter-spacing: 0.4rem;
+        color: black;
+        padding: 1rem 0;
+        text-align: center;
+        @media (max-width: 900px) {
+            width: 80%;
+        }
+
+    }
+
+    form {
+        width: 35%;
+        @media (max-width: 900px) {
+            width: 80%;
+        }
+
+        input{
+            width: 100%;
+            padding: 1.2rem 2rem;
+            border: 1px solid #ccc;
+            margin: 2rem 0;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: black;
+            
+
+            &:last-child {
+                font-size: 1.3rem;
+                font-weight: 700;
+                color:#22aea5;
+                position: absolute;
+                border: none;
+                background: none;
+                width: 10%;
+                margin-left: -8%;
+                text-decoration: underline;
+                @media (max-width: 900px) {
+                    width: 20%;
+                    margin-left: -20%;
+                }
+            }
+        }
+
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 2.3rem;
+        color: black;
+        padding: 1rem 0;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: black;
+        width: 35%;
+        text-align: center;
+
+        @media (max-width: 900px) {
+            width: 80%;
+        }
+    }
+
+
+    h4 {
+        font-weight: 700;
+        font-size: 1rem;
+        color: black;
+        letter-spacing: 0.1rem;
+    }
+}
+
+.logo--img {
+    height:5rem;
+    padding: 1rem 0;
+}
+
+.payment--img {
+    height:7rem;
+    padding: 1rem 0;
+}

@@ -15,13 +15,12 @@
         
 
         &:hover {
-            font-size: 1.6rem;
             color:#22aea5;
             text-decoration: none;
         }
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 1200px) {
             display: none;
     }
 }

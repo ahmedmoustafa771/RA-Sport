@@ -13,6 +13,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width:600px) {
+            height: 6rem;
+            width: 6rem;
+        }
     
     
         &--arrow {
@@ -22,6 +26,10 @@
             border-left: 1.5px solid white;
             border-bottom: 1.5px solid white;
             transform: rotate(-45deg);
+            @media (max-width:600px) {
+                height: 1rem;
+                width: 1rem;
+            }
         }
     }
 
@@ -29,6 +37,9 @@
         font-size: 1.8rem;
         color: white;
         font-weight: bold;
+        @media (max-width:600px) {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -51,6 +62,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media (max-width:600px) {
+            height: 6rem;
+            width: 6rem;
+        }
     
     
         &--arrow {
@@ -60,6 +75,10 @@
             border-left: 1.5px solid white;
             border-bottom: 1.5px solid white;
             transform: rotate(-135deg);
+            @media (max-width:600px) {
+                height: 1rem;
+                width: 1rem;
+            }
         }
     }
 
@@ -67,6 +86,9 @@
         font-size: 1.8rem;
         color: black;
         font-weight: bold;
+        @media (max-width:600px) {
+            font-size: 1.5rem;
+        }
     }
 }
 
