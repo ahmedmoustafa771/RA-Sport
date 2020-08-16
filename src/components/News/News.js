@@ -26,14 +26,13 @@ const news = props => {
 
     let newsCards = newsArray.map(el => {
         let classState = "";
-        console.log(el.id);
         if (el.id === 2 || el.id === 3){
             classState = "news__inverse";
         } else {
              classState = "news";
         }
         return (
-            <div className={classState} key={el.id}>
+            <div className={classState} key={el.id + new Date()}>
             <div className={classState + "__model"}>
                 <img src={models[el.id - 1]} alt="model"/>
             </div>

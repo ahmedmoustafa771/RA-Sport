@@ -15,10 +15,8 @@ import sponsor10 from '../../../assets/Footer/sponsor 10.png';
 const sponsors = props => {
     const sponsorsArray = [sponsor1, sponsor2, sponsor3, sponsor4, sponsor5, sponsor6, sponsor7, sponsor8, sponsor9, sponsor10];
     const Sponsors = sponsorsArray.map((el)=> {
-        let id =0;
-        id = id++;
         return (
-            <img src={el} alt="sponsor logo" key={id} className="sponsor__img" />
+            <img src={el} alt="sponsor logo" key={el} className="sponsor__img" />
         );
     });
     return (

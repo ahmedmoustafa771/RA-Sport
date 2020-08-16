@@ -32,7 +32,6 @@ const brandCard = props => {
 
     let brandCards = brandArray.map(el => {
         let classState = "";
-        console.log(el.id);
         if (el.id === 2 || el.id === 3){
             classState = "cards__inverse";
         } else {

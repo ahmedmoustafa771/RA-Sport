@@ -22,7 +22,7 @@ import logo6 from '../../assets/Products/logo 3.png';
 
 
 const products = props => {
-    const slideImages = [model1, model3, model3, model4, model5, model6];
+    const slideImages = [model1, model2, model3, model4, model5, model6];
     const slideLogos = [logo1, logo2, logo3, logo4, logo5, logo6];
     const [loading, setLoading] = useState(true);
     const [productArray, setProductArray] = useState([]);
@@ -41,7 +41,7 @@ const products = props => {
 
     let productSlide = productArray.map(el => {
         return (
-            <div>
+            <div key={el.price + el.id}>
                 <img src={slideImages[el.id - 1]} alt="model" className="products__slide--img" />
                 <img src={slideLogos[el.id - 1]} alt="logo" className="products__slide--logo" />
                 <div className="products__slide--foot">
@@ -95,6 +95,7 @@ const products = props => {
                 containerClass="products__slide"
                 dotListClass="custom-dot-list-style"
                 itemClass="products__slide--div"
+                centerMode={true}
             >
                 {productSlide}
             </Carousel>;
